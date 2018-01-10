@@ -1,0 +1,11 @@
+This file includes all installations of tools to run the application:
+
+Instance of MongoDB:
+https://www.mongodb.com/download-center#community
+
+Getting started MongoDB:
+https://docs.mongodb.com/getting-started/shell/tutorial/install-mongodb-on-windows/
+
+NodeJS incl. npm:
+
+https://nodejs.org/en/download/
