@@ -1,14 +1,14 @@
-#Telegram Experience Sampling Bot
+# Telegram Experience Sampling Bot
 
 This bot program conducts a 5-day signal-contigent sampling Experience Sampling Study.
 More generally speaking it conducts a survey via Telegram, consisting of questions about your current availability state. This can be open or closed questions.
 
-##Getting Started
+## Getting Started
 
 First start an instance of mongo db on your machine and then start the bot program. For starting the program, execute the bot.js file via the command node bot.js from the terminal.
 Then connect to the bot via Telegram and press start in order to participate in the study. 
 
-##Prerequisites
+## Prerequisites
 
 Node version: v8.9.4
 MongoDb version: 2.X
@@ -19,7 +19,7 @@ Install the newest verson of mongodb and nodejs. The node module mongoose was us
 
 MongoDB must be running before starting bot.js. First start the server *mongod* then *mongo* executable.
 
-##Deployment
+## Deployment
 
 The application can be deployed on linux server via *screen* tool. Other possible solutions include platforms such as Heroku or Amazon Web Services.
 
@@ -27,7 +27,7 @@ May be useful for AWS deployment:
 https://claudiajs.com/
 
 
-##License
+## License
 
 This project is licensed under the MIT License.
 
