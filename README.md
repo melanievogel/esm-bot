@@ -19,8 +19,8 @@ Then connect to the bot via Telegram by searching for the bot's name and press *
 
 ## Prerequisites
 
-Node version: v8.9.4
-MongoDb version: 2.X
+* Node version: v8.9.4
+* MongoDb version: 2.X
 
 As prefered IDE for nodejs bot development I use Visual Studio Code with integrated terminal.
 First, create a new bot **token** via the botfather in Telegram and paste it into the token variable.
@@ -53,6 +53,10 @@ The repeating questions include:
 After the study was conducted the particpants got asked about the over satisfaction with the chatbot. 
 
 The same study set up was done for a control group using a native smartphone application.
+
+## Database model
+
+## Session Handling
 
 ## License
 
