@@ -6,6 +6,11 @@ ESM based studies often require additional devices and a lot of paper work for p
 
 This Chatbot conducts a 5-day signal-contigent experience sampling study via Telegram and provides open or closed questions, the participants need to answer.
 
+## System Overview
+
+![System Overview](esm-bot/esmbot.png)
+
+
 ## Getting Started
 
 First start an instance of mongo db on your machine and then start the bot program. For starting the program, execute the bot.js file via the command node bot.js from the terminal.
