@@ -1,7 +1,10 @@
-# Telegram Experience Sampling Bot
+# Experience Sampling Bot for Telegram Messenger
 
-This bot program conducts a 5-day signal-contigent sampling Experience Sampling Study.
-More generally speaking it conducts a survey via Telegram, consisting of questions about your current availability state. This can be open or closed questions.
+The **Experience Sampling Method (ESM)** is a research methodology to gather information about participants of a study over time. Participants are asked to report their thoughts, feelings, behaviour on multiple occasions during the day over a longer period of time. This method can be applied in **clinical contexts** e.g., for testing a medication and its effects during the day.
+
+ESM based studies often require additional devices and a lot of paper work for participants as well as researchers. There may also be native applications for mobile devices on the market, but as a consequence participants need to install an additional application which they need only temporarily. Therefore, this project uses **Instant Messaging (IM)** and conducts the study via a messaging service. **Telegram** was choosen for this project because of its open Bot API. 
+
+This Chatbot conducts a 5-day signal-contigent experience sampling study via Telegram and provides open or closed questions, the participants need to answer.
 
 ## Getting Started
 
@@ -31,6 +34,6 @@ https://claudiajs.com/
 
 This project is licensed under the MIT License.
 
-Acknowledgments
+## Acknowledgments
 
 Thanks to mullwar for providing the great telebot api: https://github.com/mullwar/telebot/.
