@@ -32,6 +32,28 @@ MongoDB must be running before starting bot.js. First start the server *mongod* 
 
 The application can be deployed e.g., on a linux server via *screen* tool.
 
+## Context: Availability Study
+
+This project was part of my bachelor thesis where the use case was to conduct a ESM study for the availability of participants during the day. Availability in this context means the availability to consider taking phone calls or answering text messages during the day. By starting the chatbot, a survey consisting of three parts will be conducted:
+
+### 1. Part: Demographical Data
+Like in every research study, first the demographical data of the participants are collected and stored in the database.
+The quesions include:
+* ...
+* ...
+
+### 2. Part: The Questions
+The main part consists of repeating questions during the day for a period of 5 days. During the day participants will be asked the same questions to different points in time to get their emotions at that point of time.
+The repeating questions include:
+* ...
+* ...
+* ...
+
+### 3. Part: Satisfaction Survey
+After the study was conducted the particpants got asked about the over satisfaction with the chatbot. 
+
+The same study set up was done for a control group using a native smartphone application.
+
 ## License
 
 This project is licensed under the MIT License.
