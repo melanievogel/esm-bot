@@ -8,7 +8,7 @@ This Chatbot conducts a 5-day signal-contigent experience sampling study via Tel
 
 ## System Overview
 
-![System Overview](systemOverview.png)
+![System Overview](diagrams/systemOverview.png)
 
 
 ## Getting Started
