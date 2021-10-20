@@ -19,9 +19,8 @@ Then connect to the bot via Telegram by searching for the bot's name and press *
 
 ## Prerequisites
 
-* Node version: v8.9.4
-* MongoDb version: 2.X
-* Mongoose
+* Latest stable node version installed
+* Latest stable mongoDb version installed
 * Valid authorization token from botfather (How do I create a bot: https://core.telegram.org/bots)
 
 As prefered IDE for nodejs bot development I use Visual Studio Code with integrated terminal.
