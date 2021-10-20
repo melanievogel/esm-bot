@@ -21,12 +21,15 @@ Then connect to the bot via Telegram by searching for the bot's name and press *
 
 * Node version: v8.9.4
 * MongoDb version: 2.X
+* Mongoose
+* Valid authorization token from botfather (How do I create a bot: https://core.telegram.org/bots)
 
 As prefered IDE for nodejs bot development I use Visual Studio Code with integrated terminal.
 First, create a new bot **token** via the botfather in Telegram and paste it into the token variable.
-Install the newest verson of `mongodb` and `nodejs`. The node module mongoose was used for database operations.
+Install the latest stable version of **mongodb** and **nodejs**. The node module **mongoose** was used for database operations.
 
-MongoDB must be running before starting bot.js. First start the server *mongod* then *mongo* executable.
+MongoDB must be running before starting bot.js. On Windows OS, first start the server *mongod* then *mongo* executable.
+On Linux `sudo systemd start mongod`.
 
 ## Deployment
 
