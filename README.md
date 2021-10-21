@@ -8,57 +8,76 @@ This Chatbot conducts a 5-day signal-contigent experience sampling study via Tel
 
 ## System Overview
 
-![System Overview](diagrams/systemOverview.png)
+This overview shows the high-level interacting components of the bot program:
 
+![System Overview](diagrams/systemOverview.png)
 
 ## Getting Started
 
-First start an instance of `mongo db` on your machine and then start the bot program. For starting the program, execute the `bot.js` file via 
-`node bot.js` from the terminal.
-Then connect to the bot via Telegram by searching for the bot's name and press **Start** in order to participate in the study. 
+Before starting make sure to have fulfilled all the prerequisites:
 
-## Prerequisites
+### Prerequisites
 
 * Latest stable node version installed
 * Latest stable mongoDb version installed
+* Create your bot on Telegram via the botfather
 * Valid authorization token from botfather (How do I create a bot: https://core.telegram.org/bots)
+* Preferred IDE: Visual Studio Code
 
-As prefered IDE for nodejs bot development I use Visual Studio Code with integrated terminal.
-First, create a new bot **token** via the botfather in Telegram and paste it into the token variable.
-Install the latest stable version of **mongodb** and **nodejs**. The node module **mongoose** was used for database operations.
+### Getting started on Linux
 
-MongoDB must be running before starting bot.js. On Windows OS, first start the server *mongod* then *mongo* executable.
-On Linux `sudo systemd start mongod`.
+1. Insert authorization token into the respective variable in bot.js.
+2. Start your local instance of a database via `sudo systemd start mongod`.
+3. Start the bot program via `node bot.js`.
+4. Search the bot on Telegram with the created name.
+5. Press **Start** to start the study. As mentioned below the study consists of three parts. So first, the demographic data will be asked, then the main part will start.
 
-## Deployment
+### Getting started on Windows
 
-The application can be deployed e.g., on a linux server via *screen* tool.
+On windows, the same steps as above need to be performed except step 2.) since starting the mongodb instance is a little different. Here, first start the server *mongod* then *mongo* executable.
+
+### Customize questions
+
+The current implementation of this bot conducts a survey regarding the availablility of participants. In order to perform a different kind of ESM study, the questions and answer possibilities can be replaced or adjusted to personal needs.
 
 ## Context: Availability Study
 
 This project was part of my bachelor thesis where the use case was to conduct a ESM study for the availability of participants during the day. Availability in this context means the availability to consider taking phone calls or answering text messages during the day. By starting the chatbot, a survey consisting of three parts will be conducted:
 
-### 1. Part: Demographical Data
-Like in every research study, first the demographical data of the participants are collected and stored in the database.
-The quesions include:
-* ...
-* ...
+### Method
 
-### 2. Part: The Questions
-The main part consists of repeating questions during the day for a period of 5 days. During the day participants will be asked the same questions to different points in time to get their emotions at that point of time.
+The experiment method consists of three main parts and was conducted completely by the bot itself:
+
+**1. Part 1: Demographical Data**
+
+As in any survey, first the demographical data is collected such as age, gender, job, etc. of the participant. In addition, also the desired time frame of when to receive questions was asked and set, since people may work on night shifts during the study. One limitation is that the time range can only set once in the beginning and cannot be changed during the study.
+
+**2. Part 2: Main Part/ESM cycle**
+
+The main part consists of repeating questions during the day for a period of 5 days. During the day participants will be asked the same questions to different points in  time to get their emotions at that point of time.
+
 The repeating questions include:
-* ...
-* ...
-* ...
+  * How available are you at the moment for family/friends?
+  * How available are you at the moment for colleagues/fellow students?
+  * How available are you at the moment for other contacts?
+  * Where are you at the moment?
+  * Your current task is mostly related...
 
-### 3. Part: Satisfaction Survey
-After the study was conducted the particpants got asked about the over satisfaction with the chatbot. 
+**3. Part 3: Satisfaction Survey**
 
-The same study set up was done for a control group using a native smartphone application.
+After the study was conducted the particpants got asked about the over satisfaction with the chatbot (or the app, in the control group). 
+
+### Evaluation
+The same study set up was done for a control group using a native smartphone application and the experience with both modalieties (app vs. IM) was evaluated.
+
+### Deployment
+
+The application in the context of the thesis evaluation was deployed on a linux server via *screen* tool. Of course, cloud-based options such as Heroku, AWS, etc. may also be applicable. 
 
 ## Database model
-
+mongoose
 ## Session Handling
+multi -user support
 
 ## License
 
