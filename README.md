@@ -78,6 +78,7 @@ The application in the context of the thesis evaluation was deployed on a linux 
 
 For object modeling **mongoose** was used. Therefore first a schema needs to be defined, in order to create a model from it. A model is a class with which documents can be constructed.
 
+![Schema Diagram](diagrams/ER_model.png)
 
 
 ## Session Handling
