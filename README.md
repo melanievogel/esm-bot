@@ -75,7 +75,11 @@ The same study set up was done for a control group using a native smartphone app
 The application in the context of the thesis evaluation was deployed on a linux server via *screen* tool. Of course, cloud-based options such as Heroku, AWS, etc. may also be applicable. 
 
 ## Database model
-mongoose
+
+For object modeling **mongoose** was used. Therefore first a schema needs to be defined, in order to create a model from it. A model is a class with which documents can be constructed.
+
+
+
 ## Session Handling
 multi -user support
 
